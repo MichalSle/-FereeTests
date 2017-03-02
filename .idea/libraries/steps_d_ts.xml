@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="steps.d.ts" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/steps.d.ts" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/steps.d.ts" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
