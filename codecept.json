@@ -12,7 +12,7 @@
   },
   "include": {
     "I": "./steps_file.js",
-    "homePagePage": "./pages/homePage.js"
+    "homePage": "./pages/homePage.js"
   },
   "bootstrap": false,
   "mocha": {},
