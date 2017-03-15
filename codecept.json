@@ -4,7 +4,7 @@
   "output": "./output",
   "helpers": {
     "Protractor": {
-      "url": "http://todomvc.com/examples/angularjs/",
+      "url": "http://fereetestapp.azurewebsites.net/blog/",
       "driver": "hosted",
       "browser": "chrome",
       "rootElement": "body"
@@ -15,6 +15,10 @@
     "homePage": "./pages/homePage.js"
   },
   "bootstrap": false,
-  "mocha": {},
+  "mocha": {
+    "reporterOptions": {
+        "reportDir": "output"
+    }
+  },
   "name": "Tests"
 }
