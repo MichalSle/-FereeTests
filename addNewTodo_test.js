@@ -1,12 +1,20 @@
 var assert=require('assert');
-Feature('Adding a new todo to app');
+Feature('Enter page and check basicaly functions');
 Before((I) =>{
       I.amOnPage('/');
 });
-Scenario('Add item to list', function*(I,homePage){
-    homePage.newTodo('ss');
-    var count = yield I.grabTextFrom('#todo-count > strong');
-   I.say(count);
-   assert.equal(count,'1','Bad counted function');
-   I.say('Good counted');
+Scenario('Click to more button on homePage', function*(I,homePage){
+    I.click(homePage.moreButton);
+    var text = yield I.grabTextFrom('span');
+   //   var elementsWithSpan= element.all(by.css('span')).count();
+ var expectedSelector={css: 'span'};
+ //I.say(expectedSelector);
+   I.say(expectedSelector);
+    I.say(text);
+   assert.equal(text,'test user 1','Bad check text');
+   I.say('End of test');
+});
+
+After((I)=>{
+
 });
