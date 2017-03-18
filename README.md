@@ -1,5 +1,5 @@
 # -FereeTests
 This is projects for polish programming contest  "DajSiePoznac" 
 
-I using:
+I'm using:
 - CodeceptJS, Protractor

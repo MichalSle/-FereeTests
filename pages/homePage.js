@@ -15,10 +15,7 @@ module.exports = {
   },
    moreButton:{css:".red"},
   clickToMore(){
-    //var expectedSelector={css: 'span'};
    var elementsWithSpan= element.all(by.css('.span')).first();
    I.say(elementsWithSpan);
-    //I.click(this.moreButton);
-  //  I.click(this.fields.moreButton);
   }
 }
