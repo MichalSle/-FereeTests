@@ -1,21 +1,18 @@
 var chai = require('chai');
-var chaiAsPromised = require('chai-as-promised');
+var chaiAsPromised = require('chai-as-promised');//
 chai.use(chaiAsPromised);
 var expect = chai.expect;
+//ar assert = require('assert');
 Feature('Enter page and check basicaly functions');
 Before((I) =>{
       I.amOnPage('/');
 });
-Scenario('Click to more button on homePage', function*(I,homePage){
-   // var countBeforeClick= element.all(by.css('.right'));
-    var textFromFirst=yield I.grabTextFrom('span');
-    expect(textFromFirst).to.equal('test user 1');
-    var a=  I.findElements('span');
-    I.say(a);
-    I.click(homePage.moreButton);
-    
+Scenario('Check amount of ', function*(I,homePage){
+   I.checkAmountOfElements(homePage.imageAuthor,3);
+   I.click(homePage.moreButton);
+   I.checkAmountOfElements(homePage.imageAuthor,4);
 });
 
 After((I)=>{
-
+  I.clearCookie();
 });

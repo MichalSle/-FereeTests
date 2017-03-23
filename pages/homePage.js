@@ -13,9 +13,10 @@ module.exports = {
    // textTodo:'#new-todo'
      
   },
-   moreButton:{css:".red"},
+  moreButton:'.red',
+  imageAuthor:'.responsive-img',
   clickToMore(){
-   var elementsWithSpan= element.all(by.css('.span')).first();
-   I.say(elementsWithSpan);
+  var elementsWithSpan= element.all(by.css('.span')).first();
+  I.say(elementsWithSpan);
   }
 }
