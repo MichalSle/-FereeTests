@@ -15,6 +15,7 @@ module.exports = {
   },
   moreButton:'.red',
   imageAuthor:'.responsive-img',
+  post:'p',
   clickToMore(){
   var elementsWithSpan= element.all(by.css('.span')).first();
   I.say(elementsWithSpan);
